@@ -1,0 +1,11 @@
+services:
+  postgres:
+    image: postgres:latest
+    ports:
+      - "5433:5433"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: crud_demo
+    volumes:
+      - /var/lib/postgresql/data
